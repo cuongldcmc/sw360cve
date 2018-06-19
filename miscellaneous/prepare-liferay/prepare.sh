@@ -16,7 +16,7 @@ TARGET="sw360-liferay.tar.gz"
 if [ ! -f "$TARGET" ]; then
     LIFERAY="liferay-portal-tomcat-6.2-ce-ga5-20151119152357409.zip"
     if [ ! -f "$LIFERAY" ]; then
-        curl -OskLC - 'https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.2.4%20GA5/liferay-portal-tomcat-6.2-ce-ga5-20151119152357409.zip'
+        wget https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.2.4%20GA5/liferay-portal-tomcat-6.2-ce-ga5-20151119152357409.zip
     else
         echo "... the file $LIFERAY already exists: skip"
     fi
